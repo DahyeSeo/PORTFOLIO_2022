@@ -36,8 +36,8 @@ body.fixed{
 }
 input[type=text],
 input[type=email]{
-	padding:15px 18px;
-	font-size:1em;
+	padding: 15px 18px;
+	font-size: 1em;
 	color:#777;
 	border:1px solid #ddd;
 	border-radius:5px;
@@ -46,25 +46,25 @@ input[type=email]{
 	margin-bottom:28px;
 }
 textarea{
-	padding:15px 16px;
-	font-size:1em;
-	color:#777;
-	border:1px solid #ddd;
-	border-radius:5px;
-	box-sizing:border-box;
-	line-height:1.5;
-	resize:none;
+	padding: 15px 16px;
+	font-size: 1em;
+	color: #777;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-sizing: border-box;
+	line-height: 1.5;
+	resize: none;
 }
 input[type=submit]{
 	padding: 8px 62px;
-	line-height:44px;
-	font-size:0.875em;
-	color:#fff;
-	border:1px solid #255aae;
-	border-radius:5px;
-	box-sizing:border-box;
-	background-color:#255aae;
-	font-weight:600;
+	line-height: 44px;
+	font-size: 0.875em;
+	color: #fff;
+	border: 1px solid #255aae;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background-color: #255aae;
+	font-weight: 600;
 }
 
 /* header */
@@ -327,6 +327,9 @@ input[type=submit]{
 	color: #777;
 	letter-spacing: -1px;
 }
+#page1 .title h3 span br{
+	display: none;
+}
 #page1 .content{
 	margin-top: 5em;
 }
@@ -370,8 +373,8 @@ input[type=submit]{
 	#page1 .title h3{
 		font-size: 1.75em;
 	}
-	#page1 .title span{
-		display: none;
+	#page1 .title h3 span br{
+		display: block;
 	}
 	#page1 .content{
 		padding: 0;
@@ -405,6 +408,9 @@ input[type=submit]{
 	color: #777;
 	font-size: 1em;
 	letter-spacing: -1px;
+}
+#page2 .title span br{
+	display: none;
 }
 #page2 .inner .content{
 	margin-top: 5em;
@@ -520,8 +526,8 @@ input[type=submit]{
 	#page2 .title h3{
 		font-size: 1.75em;
 	}
-	#page2 .title span{
-		display: none;
+	#page2 .title span br{
+		display: block;
 	}
 	#page2 .inner{
 		padding: 6.25em 0 7.813em;
@@ -555,6 +561,9 @@ input[type=submit]{
 	font-size: 1em;
 	letter-spacing: -1px;
 	margin-top: 15px;
+}
+#page3 .title span br{
+	display: none;
 }
 #page3 .content{
 	margin-top: 5em;
@@ -652,8 +661,8 @@ input[type=submit]{
 	#page3 .title h3{
 		font-size: 1.75em;
 	}
-	#page3 .title span{
-		display: none;
+	#page3 .title span br{
+		display: block;
 	}
 	#page3 .content li{
 		width: calc(100% - 40px);
@@ -699,6 +708,9 @@ input[type=submit]{
 	font-size: 1em;
 	letter-spacing: -1px;
 	margin-top: 15px;
+}
+#page4 .title span br{
+	display: none;
 }
 #page4 .slider{
 	max-width: 940px;
@@ -783,6 +795,11 @@ input[type=submit]{
 	#page4 .slider{
 		padding: 0 20px;
 		box-sizing: border-box;
+	}
+}
+@media only screen and (max-width:460px){
+	#page4 .title span br{
+		display: block;
 	}
 }
 
@@ -880,6 +897,10 @@ input[type=submit]{
 	}
 	#page6 .inner .middle .text input.subject{
 		margin-bottom:28px;
+	}
+	input[type=submit]{
+		width: calc(100% - 10%);
+		border: 0;
 	}
 }
 @media only screen and (max-width:460px){

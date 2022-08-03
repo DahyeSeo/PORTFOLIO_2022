@@ -1645,6 +1645,9 @@ body.fixed{
 	#page3 .project .content .pc .bg{
 		display: none;
 	}
+	#page3 .project .content .pc .image{
+		padding: 0 3.75em;
+	}
 	#page3 .project .content .pc .image .modal img{
 		display: none;
 	}
@@ -1657,6 +1660,9 @@ body.fixed{
 }
 @media only screen and (max-width: 460px){
 	#page3 .project .content .pc .text{
+		padding: 0 5%;
+	}
+	#page3 .project .content .pc .image{
 		padding: 0 5%;
 	}
 }
@@ -2004,6 +2010,10 @@ body.fixed{
 	}
 	#page4 .inner ul li span{
 		margin-top: 1em;
+		font-size: 0.875em;
+	}
+	#page4 .inner ul li b{
+		font-size: 0.875em;
 	}
 	#page4 .inner p span.tooltiptext{
 		display: none;
