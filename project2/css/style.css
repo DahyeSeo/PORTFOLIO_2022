@@ -327,7 +327,7 @@ input[type=submit]{
 	color: #777;
 	letter-spacing: -1px;
 }
-#page1 .title h3 span br{
+#page1 .title span br{
 	display: none;
 }
 #page1 .content{
