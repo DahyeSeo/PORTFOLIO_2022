@@ -373,7 +373,7 @@ input[type=submit]{
 	#page1 .title h3{
 		font-size: 1.75em;
 	}
-	#page1 .title h3 span br{
+	#page1 .title span br{
 		display: block;
 	}
 	#page1 .content{
@@ -884,9 +884,9 @@ input[type=submit]{
 }
 @media only screen and (max-width:940px){
 	#page6 .inner .middle .text{
-		float:none;
-		width:100%;
-		margin-right:0;
+		float: none;
+		width: 100%;
+		margin-right: 0;
 	}
 	#page6 .inner .middle .message{
 		float:none;
@@ -899,7 +899,7 @@ input[type=submit]{
 		margin-bottom:28px;
 	}
 	input[type=submit]{
-		width: calc(100% - 10%);
+		width: calc(100% - 40px);
 		border: 0;
 	}
 }

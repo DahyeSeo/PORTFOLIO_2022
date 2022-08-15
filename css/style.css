@@ -728,7 +728,7 @@ body.fixed{
 #page1 .content .photo{
 	position: relative;
 	float: left;
-	width:35%;
+	width:45%;
 	opacity: 0.2;
 	transform: translateX(-300px);
 	transition: 0.85s;
@@ -738,11 +738,11 @@ body.fixed{
 	transform: translateX(0);
 }
 #page1 .content .photo .blob{
-	width: 450px;
+	width: 480px;
 	z-index: 2;
 }
 #page1 .content .photo .blob_line{
-	width: 450px;
+	width: 480px;
 	position: absolute;
 	top:0;
 	left:0;
@@ -750,7 +750,7 @@ body.fixed{
 }
 #page1 .content .introduce{
 	float: left;
-	width:65%;
+	width:55%;
 	padding: 0;
 	opacity: 0.2;
 	transform: translateY(300px);
@@ -878,6 +878,14 @@ body.fixed{
 	color: #49a18e;
 	font-weight: 400;
 }
+@media only screen and (max-width: 1280px){
+	#page1 .content .photo{
+		width: 35%;
+	}
+	#page1 .content .introduce{
+		width: 65%;
+	}
+}
 @media only screen and (max-width: 940px){
 	#page1 .content{
 		font-size: 1.125em;
@@ -974,13 +982,13 @@ body.fixed{
 	height: 1px;
 	background-color: #555;
 }
-#page2 .banner .title p:nth-of-type(1){
-	margin-top: 5.125em;
-}
 #page2 .banner .title p{
 	margin-top: 1.125em;
 	color: #999;
 	font-size: 0.913em;
+}
+#page2 .banner .title p:nth-of-type(1){
+	margin-top: 5.125em;
 }
 #page2 .banner .content{
 	float: left;
@@ -1030,7 +1038,7 @@ body.fixed{
 	position: absolute;
 	top: 50%;
 	left: 2.75em;
-	transform: translateY(-6.25em);
+	transform: translateY(-50%);
 }
 #page2 .banner .content li a .text span{
 	display: block;
@@ -1039,14 +1047,6 @@ body.fixed{
 	color: #49a18e;
 	letter-spacing: 1px;
 	transition: color 0.35s;
-}
-#page2 .banner .content li a:focus .text span,
-#page2 .banner .content li:hover a .text span,
-#page2 .banner .content li a:focus .text em,
-#page2 .banner .content li:hover a .text em,
-#page2 .banner .content li a:focus .text p,
-#page2 .banner .content li:hover a .text p{
-	color: #fff;
 }
 #page2 .banner .content li a .text em{
 	font-style: normal;
@@ -1058,12 +1058,22 @@ body.fixed{
 	letter-spacing: -1px;
 	transition: color 0.35s;
 }
+#page2 .banner .content li a:focus .text span,
+#page2 .banner .content li:hover a .text span,
+#page2 .banner .content li a:focus .text em,
+#page2 .banner .content li:hover a .text em{
+	color: #fff;
+}
 #page2 .banner .content li a .text p{
+	display: none;
 	margin-top: 4.125em;
 	line-height: 2.1;
 	font-size: 0.913em;
-	color: #777;
-	transition: color 0.35s;
+	color: #fff;
+}
+#page2 .banner .content li a:focus .text p,
+#page2 .banner .content li:hover a .text p{
+	display: block;
 }
 #page2 .banner .content li a .skill_bg img.mo{
 	display: none;
@@ -1127,12 +1137,12 @@ body.fixed{
 		display: block;
 	}
 	#page2 .banner .content li a .text span,
-	#page2 .banner .content li a .text em,
-	#page2 .banner .content li a .text p{
+	#page2 .banner .content li a .text em{
 		color: #fff;
 	}
 	#page2 .banner .content li a .text p{
 		margin-top: 3em;
+		display: block;
 	}
 }
 @media only screen and (max-width: 720px){
