@@ -4,6 +4,7 @@ $(function(){
 			scrollTo(0,0);
 		}, 100);
 	}
+
 	$("#page2 ul li a").click(function(e){
 		e.preventDefault();
 	});
@@ -19,6 +20,7 @@ $(function(){
 	$("#header").addClass("active");
 	$(".controller").addClass("active");
 	$(".ver").addClass("active");
+	
 	$("body").addClass("fixed");
 	
 	setTimeout(function(){

@@ -1292,7 +1292,6 @@ body.fixed{
 	width: 70px;
 	height: 70px;
 	background: url(../images/project_arrow.svg);
-	background-size: cover;
 	transition: background 0.35s;
 }
 #page3 .project .summary:hover a::after{
